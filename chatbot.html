@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat-bot</title>
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@32,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="app-header">
+        <h1 class="heading">Hit-bot</h1>
+        <h4 class="sub-heading">How can i help you?</h4>
+      </header>
+      
+      <ul class="suggestions">
+        <li class="suggestions-item">
+          <p class="text">give about recent earthquakes</p>
+          <span class="icon material-symbols-rounded">Emergency</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">give help disater-mangment number near me</p>
+          <span class="icon material-symbols-rounded">Emergency</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">make a report of disaster-mangment</p>
+          <span class="icon material-symbols-rounded">Emergency</span>
+        </li>
+        <li class="suggestions-item">
+          <p class="text">say thanks for opportunity</p>
+          <span class="icon material-symbols-rounded">Emergency</span>
+        </li>
+      </ul>
+      
+      <div class="chats-container"></div>
+     
+      <div class="prompt-container">
+        <div class="prompt-wrapper">
+          <form action="#" class="prompt-form">
+            <input type="text" placeholder="Ask Hit-bot" class="prompt-input" required />
+            <div class="prompt-actions">
+             
+              <div class="file-upload-wrapper">
+                <img src="#" class="file-preview" />
+                <input id="file-input" type="file" accept="image/*, .pdf, .txt, .csv" hidden />
+                <button type="button" class="file-icon material-symbols-rounded">description</button>
+                <button id="cancel-file-btn" type="button" class="material-symbols-rounded">close</button>
+                <button id="add-file-btn" type="button" class="material-symbols-rounded">attach_file</button>
+              </div>
+              
+              <button id="stop-response-btn" type="button" class="material-symbols-rounded">stop_circle</button>
+              <button id="send-prompt-btn" class="material-symbols-rounded">arrow_upward</button>
+            </div>
+          </form>
+                    <button id="theme-toggle-btn" class="material-symbols-rounded">light_mode</button>
+          <button id="delete-chats-btn" class="material-symbols-rounded">delete</button>
+        </div>
+        <p class="disclaimer-text">chat-bot by team aspirants</p>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

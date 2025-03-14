@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Disaster Monitoring</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/globe.gl"></script>
+</head>
+<body>
+    <header>
+        <h1>🌍 Emergency Disaster Monitoring System</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chatbot.html">AI Chat Bot</a></li>
+            <li><a href="contact.html">Complaint Box</a></li>
+            <li><a href="chating.html">Discussions</a></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard">
+        <!-- 3D Rotating Earth -->
+        <section id="earth-container">
+            <h2>🌎 Live Earthquake Map</h2>
+            <div id="globe-container"></div>
+        </section>
+
+        <!-- Real-Time Alerts -->
+        <section id="alert-container">
+            <h2>🚨 Real-Time Earthquake Alerts</h2>
+            <ul id="alert-feed"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
